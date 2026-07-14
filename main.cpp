@@ -2,9 +2,10 @@
 using namespace std;
 int main()
 {
-  int age=18;
-  const int dob=2008;
-  cout<<"my name is jishnu"<<endl;
-  cout<<"my age is :"<< age<<endl;
-  cout<<"DOB :"<<dob;      
+  int age,year;
+  cout<<"Enter your date of birth :"<<endl;
+  cin>>year;
+  age = 2026 - year;
+  cout<<"DOB :"<<year<<endl;
+  cout<<"age :"<<age<<endl;
 }
