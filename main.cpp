@@ -1,19 +1,21 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
+    int a = 5;
+    int b = 6;
     
-    int age = 24;
-    float gpa = 9.8;
-    double pi = 3.1415161718;
-    bool isAdult = false;
-    char gender = 'M';
+    int sum = a + b;             
+    int diff = a - b;          
+    int product = a * b;        
+    double div = (double)a / b;  
     
-    cout<<"Size of int:" << sizeof(age) << " Bytes" <<endl;
-    cout<<"Size of float:" << sizeof(gpa) << " Bytes" <<endl;
-    cout<<"Size of double:" << sizeof(pi) << " Bytes" <<endl;
-    cout<<"Size of bool:" << sizeof(isAdult) << " Bytes" <<endl;
-    cout<<"Size of char:" << sizeof(gender) << " Bytes" <<endl;
+    // Display results
+    cout << "Sum: " << sum << endl;
+    cout << "Diff: " << diff << endl;
+    cout << "Product: " << product << endl;
+    cout << "Division: " << div << endl;
     
     return 0;
 }
