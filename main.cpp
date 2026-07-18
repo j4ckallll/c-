@@ -1,21 +1,11 @@
 #include <iostream>
 
-using namespace std;
-
 int main() {
-    int a = 5;
-    int b = 6;
+    double length, width;
+    std::cout << "Enter length and width: ";
+    std::cin >> length >> width;
     
-    int sum = a + b;             
-    int diff = a - b;          
-    int product = a * b;        
-    double div = (double)a / b;  
-    
-    // Display results
-    cout << "Sum: " << sum << endl;
-    cout << "Diff: " << diff << endl;
-    cout << "Product: " << product << endl;
-    cout << "Division: " << div << endl;
-    
+    std::cout << "Area: " << (length * width) << "\n";
+    std::cout << "Perimeter: " << (2 * (length + width)) << "\n";
     return 0;
 }
