@@ -2,20 +2,19 @@
 using namespace std;
 
 int main() {
-    int a = 15;
-    int b = 6;
+    int age = 24; // = - Assignment operator
 
-    int sum = a + b;
-    int diff = a - b;
-    int product = a * b;
-    float div = float(a) / b;
-    int rem = a % b;
-
-    cout << "sum :" << sum << endl;
-    cout << "diff :" << diff << endl;
-    cout << "product :" << product << endl;
-    cout << "div :" << div << endl;
-    cout << "rem :" << rem << endl;
+    age = age + 5;
+    age += 5; // addition assignment
+    age = age - 2;
+    age -= 2; // subtraction assignment
+    age = age * 6;
+    age *= 6; // multiplication assignment
+    cout << age;
+    age = age / 6;
+    age /= 6; // division assignment
+    age = age % 1;
+    age %= 1;
 
     return 0;
 }
