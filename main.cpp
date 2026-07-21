@@ -1,17 +1,21 @@
 #include <iostream>
-#include <random>
-#include <cmath>
+using namespace std;
 
 int main() {
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_real_distribution<double> distr(1.0, 100.0);
+    int a = 15;
+    int b = 6;
 
-    double random_num = distr(gen);
-    double log_val = std::log(random_num); 
+    int sum = a + b;
+    int diff = a - b;
+    int product = a * b;
+    float div = float(a) / b;
+    int rem = a % b;
 
-    std::cout << "Random Number: " << random_num << std::endl;
-    std::cout << "Natural Log (ln): " << log_val << std::endl;
+    cout << "sum :" << sum << endl;
+    cout << "diff :" << diff << endl;
+    cout << "product :" << product << endl;
+    cout << "div :" << div << endl;
+    cout << "rem :" << rem << endl;
 
     return 0;
 }
