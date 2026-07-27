@@ -1,11 +1,13 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
 
 int main() {
-    char gender = 'M';
-    int age = 17;
+    string firstname = "Goms ";
+    string lastname = "A";
 
-    cout << (gender == 'M' || age >= 18);
+    cout << firstname.append(lastname);
 
     return 0;
 }
