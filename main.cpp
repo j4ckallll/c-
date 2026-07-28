@@ -1,13 +1,21 @@
 #include <iostream>
-#include <string>
-
 using namespace std;
 
 int main() {
-    string firstname = "Goms ";
-    string lastname = "A";
+    int age = 14;
 
-    cout << firstname.append(lastname);
+    if (age < 18)
+    {
+        cout << "You are a Child" << endl;
+    }
+    else if (age > 60)
+    {
+        cout << "You are a Senior Citizen" << endl;
+    }
+    else
+    {
+        cout << "You are an Adult" << endl;
+    }
 
     return 0;
 }
