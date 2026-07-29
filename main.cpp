@@ -1,21 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int age = 14;
-
-    if (age < 18)
-    {
-        cout << "You are a Child" << endl;
-    }
-    else if (age > 60)
-    {
-        cout << "You are a Senior Citizen" << endl;
-    }
-    else
-    {
-        cout << "You are an Adult" << endl;
-    }
-
-    return 0;
+int main() 
+{
+  int age;
+  cout<<"enter your age"<<endl;
+  cin>>age;
+  if(age>=18)
+  {
+    cout<<"you are eligible to vote"<<endl;
+  }
+  else
+  {
+    cout<<"you are not eligible to vote";
+  }
+  return 0;
 }
