@@ -4,15 +4,21 @@ using namespace std;
 int main() 
 {
   int age;
-  cout<<"enter your age"<<endl;
-  cin>>age;
-  if(age>=18)
+  cout << "Enter your age: " << endl;
+  cin >> age;
+  
+  if (age > 60)
   {
-    cout<<"you are eligible to vote"<<endl;
+    cout << "You are overaged" << endl;
+  }
+  else if (age >= 18)
+  {
+    cout << "You are eligible to vote";
   }
   else
   {
-    cout<<"you are not eligible to vote";
+    cout << "You are not eligible to vote" << endl;
   }
+  
   return 0;
 }
