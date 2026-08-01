@@ -3,26 +3,36 @@ using namespace std;
 
 int main() 
 {
+    int month;
+    cout << "Enter a month number (1-12): ";
+    cin >> month;
 
-
-    int day = 2;
-
-    if (day == 1)
-        cout << "Sunday" << endl;
-    else if (day == 2)
-        cout << "Monday" << endl;
-    else if (day == 3)
-        cout << "Tuesday" << endl;
-    else if (day == 4)
-        cout << "Wednesday" << endl;
-    else if (day == 5)
-        cout << "Thursday" << endl;
-    else if (day == 6)
-        cout << "Friday" << endl;
-    else if (day == 7)
-        cout << "Saturday" << endl;
+    if (month == 1)
+        cout << "January" << endl;
+    else if (month == 2)
+        cout << "February" << endl;
+    else if (month == 3)
+        cout << "March" << endl;
+    else if (month == 4)
+        cout << "April" << endl;
+    else if (month == 5)
+        cout << "May" << endl;
+    else if (month == 6)
+        cout << "June" << endl;
+    else if (month == 7)
+        cout << "July" << endl;
+    else if (month == 8)
+        cout << "August" << endl;
+    else if (month == 9)
+        cout << "September" << endl;
+    else if (month == 10)
+        cout << "October" << endl;
+    else if (month == 11)
+        cout << "November" << endl;
+    else if (month == 12)
+        cout << "December" << endl;
     else
-        cout << "Invalid day number" << endl;
+        cout << "Invalid month number" << endl;
 
     return 0;
 }
