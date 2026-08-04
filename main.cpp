@@ -3,13 +3,19 @@ using namespace std;
 
 int main() 
 {
-    for (int i = 1; i <= 3; i++) 
+    for (int i = 1; i <= 5; i++) 
     {
-        for (int j = 1; j <= 3; j++) 
+        if (i == 2) 
         {
-            cout << i << j << " ";
+            continue;
         }
-        cout << endl;
+
+        if (i == 4) 
+        {
+            break;
+        }
+
+        cout << i << endl;
     }
 
     return 0;
