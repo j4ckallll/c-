@@ -1,22 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int main() 
-{
-    for (int i = 1; i <= 5; i++) 
-    {
-        if (i == 2) 
-        {
-            continue;
-        }
+int main() {
 
-        if (i == 4) 
-        {
-            break;
-        }
+    int ages[5] = {21, 22, 21, 34, 45};
 
-        cout << i << endl;
+    for (int i = 0; i < 5; i++) {
+        cout << ages[i] << " ";
     }
+    cout << endl;
 
     return 0;
 }
