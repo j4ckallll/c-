@@ -1,35 +1,25 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-int main() {
+struct
+{
+    string name;
+    int age;
+    float cgpa;
+} jishnu, vishnu;
 
-    int D3Array[2][5][5] = {
-        {
-            {21, 22, 21, 34, 45},
-            {21, 22, 21, 34, 45},
-            {21, 22, 21, 34, 45},
-            {21, 22, 21, 34, 45},
-            {21, 22, 21, 34, 45}
-        },
-        {
-            {21, 22, 21, 34, 45},
-            {21, 22, 21, 34, 45},
-            {21, 22, 21, 34, 45},
-            {21, 22, 21, 34, 45},
-            {21, 22, 21, 34, 45}
-        }
-    };
+int main()
+{
+    jishnu.name = "jishnu";
+    jishnu.age = 18;
+    jishnu.cgpa = 9.0f;
 
-    for (int i = 0; i < 2; i++) {
-        cout << "Block " << i << ":" << endl;
-        for (int j = 0; j < 5; j++) {
-            for (int k = 0; k < 5; k++) {
-                cout << D3Array[i][j][k] << " ";
-            }
-            cout << endl;
-        }
-        cout << endl;
-    }
+    vishnu.name = "vishnu";
+    vishnu.age = 23;
+    vishnu.cgpa = 9.5f;
+
+    cout << vishnu.cgpa << endl;
 
     return 0;
 }
