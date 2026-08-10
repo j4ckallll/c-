@@ -1,25 +1,23 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-struct
-{
-    string name;
-    int age;
-    float cgpa;
-} jishnu, vishnu;
+enum class Day {
+    SUNDAY,
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY
+};
 
-int main()
-{
-    jishnu.name = "jishnu";
-    jishnu.age = 18;
-    jishnu.cgpa = 9.0f;
+int main() {
 
-    vishnu.name = "vishnu";
-    vishnu.age = 23;
-    vishnu.cgpa = 9.5f;
+    Day today = Day::TUESDAY;
+    Day tomorrow = Day::WEDNESDAY;
 
-    cout << vishnu.cgpa << endl;
+    if (today == Day::SUNDAY) {
+        cout << "Holiday" << endl;
+    } else {
+        cout << "Not a Holiday" << endl;
+    }
 
     return 0;
 }
