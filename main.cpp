@@ -2,27 +2,16 @@
 using namespace std;
 
 int main() {
-
     int age = 24;
 
-    int copyAge = age;
-    int &aliasAge = age;
+    int* ptr;
+    ptr = new int;
 
-    age = 25;
+    *ptr = 24;
 
-    cout << "Reference " << aliasAge << endl;
-    cout << "Copy " << copyAge << endl;
+    cout << *ptr;
 
-    cout << &age << endl;
-
-    int* ptr = &age;
-
-    cout << "ptr " << ptr << endl;
-    cout << "*ptr " << *ptr << endl;
-
-    *ptr = 56;
-
-    cout << age << endl;
+    delete ptr;
 
     return 0;
 }
