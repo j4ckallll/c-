@@ -2,16 +2,25 @@
 using namespace std;
 
 int main() {
-    int age = 24;
+    int num;
 
-    int* ptr;
-    ptr = new int;
+    cout << "Enter the number of students :";
+    cin >> num;
 
-    *ptr = 24;
+    int* arr = new int[num];
 
-    cout << *ptr;
+    cout << "Enter " << num << " numbers : ";
+    for(int i = 0; i < num; i++)
+    {
+        cin >> arr[i];
+    }
 
-    delete ptr;
+    for(int i = 0; i < num; i++)
+    {
+        cout << arr[i] << " ";
+    }
+
+    delete[] arr;
 
     return 0;
 }
