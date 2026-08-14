@@ -1,26 +1,15 @@
 #include <iostream>
+
 using namespace std;
 
+void after5();
+
 int main() {
-    int num;
-
-    cout << "Enter the number of students :";
-    cin >> num;
-
-    int* arr = new int[num];
-
-    cout << "Enter " << num << " numbers : ";
-    for(int i = 0; i < num; i++)
-    {
-        cin >> arr[i];
-    }
-
-    for(int i = 0; i < num; i++)
-    {
-        cout << arr[i] << " ";
-    }
-
-    delete[] arr;
-
+    after5();
     return 0;
+}
+
+void after5() {
+    int age = 24;
+    cout << "Age after 5 years is " << age + 5 << endl;
 }
