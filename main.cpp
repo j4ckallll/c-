@@ -1,14 +1,17 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int add(int num=3)
+
+int add(string greet, int num = 3)
 {
-  cout<<num+2<<endl;
-}
-int main()
-{
-  add(8);
-  add();
-  return 0;
+    cout << greet << " " << num + 2 << endl;
+    return num + 2;
 }
 
+int main()
+{
+    add("hi", 8);
+    add("hello");
+    
+    return 0;
+}
