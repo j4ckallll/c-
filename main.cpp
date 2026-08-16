@@ -1,17 +1,22 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-int add(string greet, int num = 3)
-{
-    cout << greet << " " << num + 2 << endl;
-    return num + 2;
+void display(int num) {
+    cout << "Integer: " << num << endl;
 }
 
-int main()
-{
-    add("hi", 8);
-    add("hello");
+void display(double num) {
+    cout << "Double: " << num << endl;
+}
+
+void display(string text) {
+    cout << "String: " << text << endl;
+}
+
+int main() {
+    display(5);
+    display(3.14);
+    display("Hello");
     
     return 0;
 }
