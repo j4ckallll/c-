@@ -1,22 +1,14 @@
 #include <iostream>
 using namespace std;
 
-void display(int num) {
-    cout << "Integer: " << num << endl;
-}
-
-void display(double num) {
-    cout << "Double: " << num << endl;
-}
-
-void display(string text) {
-    cout << "String: " << text << endl;
+int fact(int n)
+{
+    if(n==0)
+        return 1;
+    return n*fact(n-1);
 }
 
 int main() {
-    display(5);
-    display(3.14);
-    display("Hello");
-    
+    cout<<fact(5);
     return 0;
 }
