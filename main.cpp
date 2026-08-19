@@ -1,20 +1,25 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
 
-int fact(int n)
-{
-    cout << "n=" << n << endl;
-    if (n == 0)
-    {
-        cout << "n value is 0" << endl;
-        return 1;
-    }
-    cout << "calling " << n << "* fact(" << n - 1 << ")" << endl;
-    return n * fact(n - 1);
-}
+class student {
+    public:
+        int roll_no;
+        string name;
+};
 
-int main()
-{
-    cout << fact(5) << endl;
+int main() {
+
+    student jishnu;
+    jishnu.roll_no = 1;
+    jishnu.name = "jishnu";
+
+    student vishnu;
+    vishnu.roll_no = 2;
+    vishnu.name = "vishnu";
+
+    cout<<jishnu.name<<endl;
+
     return 0;
 }
